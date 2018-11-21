@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    /*flex-wrap:wrap; wraps the container/content*/
+    justify-content: center;
+    /*centers content*/
+}
+h1 {
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 2px solid pink;
+    border-right: 2px solid pink;
+    width: 400px;
+    text-align: center;
+    box-shadow: 4px 4px 5px #888888;
+    margin-top: 10px;
+    /*-moz-box-shadow:
+    -ms-box-shadow:
+    -webkit-box <-- the difference prefixes always refer to css reference or caniuse.com*/
+}
+img{
+    width: 450px;
+    height: 300px;
+    /*no individual attribute on the divs*/
+    margin: 10px; /*provides the spacing of the images*/
+    transition: all 1s; /*how long it takes to scale/transform*/
+}
+
+img:hover {
+    transform: scale(1.1); /*makes image move upon hover via the transition over 1sec*/
+    /*scale(1.1) is the size of how much the image shall change*/
+}
